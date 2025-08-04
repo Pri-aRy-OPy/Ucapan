@@ -2,7 +2,7 @@
 // Deskripsi: Halaman login dan dashboard untuk admin.
 
 import { useState, useEffect, useCallback } from 'react';
-import { auth, db } from '@/firebase/config';
+import { auth, db } from '../firebase/config';
 import { signInWithEmailAndPassword, onAuthStateChanged, signOut } from 'firebase/auth';
 import { collection, getDocs, query, orderBy, doc, deleteDoc } from 'firebase/firestore';
 import LoadingSpinner from '../components/LoadingSpinner';

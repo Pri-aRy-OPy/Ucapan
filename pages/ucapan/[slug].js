@@ -6,8 +6,8 @@ import Link from 'next/link';
 import { db } from '../../firebase/config';
 import { collection, query, where, getDocs } from 'firebase/firestore';
 import { useEffect, useRef } from 'react';
-import Confetti from '../../components/Confetti';
-import LoadingSpinner from '../../components/LoadingSpinner';
+import Confetti from 'components/Confetti';
+import LoadingSpinner from 'components/LoadingSpinner';
 
 export default function UcapanPage({ ucapanData, error }) {
     const router = useRouter();

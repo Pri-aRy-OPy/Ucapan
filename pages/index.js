@@ -93,7 +93,7 @@ export default function HomePage() {
                 </form>
             </div>
             <footer className="mt-8 text-gray-600 text-sm">
-                Dibuat dengan ❤️ oleh AI. | <Link href="/admin" className="text-blue-500 hover:underline">Admin Login</Link>
+                Dibuat dengan ❤️ oleh anu. | <Link href="/admin" className="text-blue-500 hover:underline">Admin Login</Link>
             </footer>
         </div>
     );

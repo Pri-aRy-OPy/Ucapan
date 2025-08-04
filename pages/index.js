@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { storage, db } from '../firebase/config';
 import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
-import Modal from '../components/Modal';
+import Modal from 'components/Modal';
 
 export default function HomePage() {
     const [name, setName] = useState('');

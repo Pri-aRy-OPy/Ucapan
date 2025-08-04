@@ -1,0 +1,38 @@
+/* FILE: styles/globals.css */
+
+/* Inject Tailwind's base, components, and utilities styles.
+  Ini adalah tiga baris paling penting yang membuat Tailwind CSS berfungsi.
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* (Opsional) Anda bisa menambahkan beberapa style global kustom di sini
+  jika diperlukan.
+*/
+body {
+  /* Menambahkan sedikit warna latar belakang default */
+  @apply bg-gray-50 text-gray-800;
+}
+
+/* (Opsional) Menambahkan animasi fade-in sederhana yang bisa digunakan
+  di mana saja dengan menambahkan kelas "animate-fade-in-up".
+*/
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-in-out;
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+

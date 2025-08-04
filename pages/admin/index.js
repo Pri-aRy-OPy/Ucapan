@@ -5,7 +5,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { auth, db } from '@/firebase/config';
 import { signInWithEmailAndPassword, onAuthStateChanged, signOut } from 'firebase/auth';
 import { collection, getDocs, query, orderBy, doc, deleteDoc } from 'firebase/firestore';
-import LoadingSpinner from '@/components/LoadingSpinner';
+import LoadingSpinner from '../components/LoadingSpinner';
 import Link from 'next/link';
 
 // --- Komponen untuk Tampilan Login ---
